@@ -11,15 +11,15 @@ galaxy_info:
 
   platforms:
     - name: Fedora
-     versions:
-     - all
+      versions:
+        - all
     - name: MacOSX
-     versions:
-     - all
+      versions:
+        - all
     - name: Ubuntu
-     versions:
-     - all
+      versions:
+        - all
     - name: Debian
-     versions:
-     - all
+      versions:
+        - all
 dependencies: []
