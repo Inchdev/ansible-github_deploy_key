@@ -1,0 +1,29 @@
+---
+- meta: noop
+  vars: &default_add_key_params
+    url: "{{github_api_url}}"
+    method: POST
+    body:
+      title: "{{github_deploy_key_name}}"
+      key: "{{github_deploy_key}}"
+      read_only: "{{github_deploy_key_readonly}}"
+    body_format: json
+    status_code:
+      - 201
+      - 200
+
+- name: Add key with username
+  uri:
+    <<: *default_add_key_params
+    user: "{{github_username}}"
+    password: "{{github_password}}"
+    force_basic_auth: yes
+  when: github_username is defined
+
+
+- name: Add key with API token
+  uri:
+    <<: *default_add_key_params
+    headers:
+      Authorization: token {{github_access_token}}
+  when: github_username is undefined and github_access_token is defined

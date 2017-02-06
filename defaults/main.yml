@@ -1,0 +1,5 @@
+---
+github_deploy_key_readonly: true
+github_api_url: https://api.github.com/repos/{{github_repository}}/keys
+deploy_key_operation: present
+github_deploy_key_name: ansible-generated

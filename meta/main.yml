@@ -1,0 +1,18 @@
+galaxy_info:
+  author: Thomas Thimothée
+  description: Developer
+  company: Inch
+
+  license: license (GPLv2, CC-BY, etc)
+
+  min_ansible_version: 1.2
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+
+  galaxy_tags: [github, deploy, ssh, key]
+
+dependencies: []

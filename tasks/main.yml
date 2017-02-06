@@ -1,0 +1,6 @@
+---
+- include: add_key.yml
+  when: deploy_key_operation == 'present'
+
+- include: remove_key.yml
+  when: deploy_key_operation == 'absent'
