@@ -6,6 +6,20 @@ galaxy_info:
   license: license (GPLv2, CC-BY, etc)
 
   min_ansible_version: 1.2
+
   galaxy_tags: [github, deploy, ssh, key]
 
+  platforms:
+    - name: Fedora
+     versions:
+     - all
+    - name: MacOSX
+     versions:
+     - all
+    - name: Ubuntu
+     versions:
+     - all
+    - name: Debian
+     versions:
+     - all
 dependencies: []
