@@ -47,7 +47,7 @@ Example Playbook
         - role: github_deploy_key
           vars:
             github_repository: owner/repo_name
-            github_access_token: 932042631839424hrkrhiyfg871y89
+            github_access_token: myAccessTokenThatIsSuperLongAndUsuallyInTheVault
             github_deploy_key: ssh-rsa tototata
             github_deploy_key_readonly: false
 
@@ -67,7 +67,7 @@ Example Playbook
             deploy_key_operation: absent
             github_repository: owner/repo_name
             github_deploy_key_id: 4242
-            github_access_token: 932042631839424hrkrhiyfg871y89
+            github_access_token: myAccessTokenThatIsSuperLongAndUsuallyInTheVault
 
 License
 -------
