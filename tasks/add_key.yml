@@ -11,6 +11,7 @@
     status_code:
       - 201
       - 200
+      - 422
 
 - name: Add key with username
   uri:
